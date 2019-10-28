@@ -59,19 +59,19 @@ public class StudentTest extends BasicTest {
 //		mongo.MongoInsert(student.getName(), student.getCpf(), id, "POST");	
 //	}
 	
-	@Test(priority=1)
-	public void getApartments() {
-		
-		 given()
-			.pathParam("id", id)
-		.when()
-			.get("/students/{id}")
-		.then()
-			.statusCode(200).log().body()
-			
-			;
-		 mongo.MongoInsert(null, null, id, "GET");
-	}
+//	@Test(priority=1)
+//	public void getApartments() {
+//		
+//		 given()
+//			.pathParam("id", id)
+//		.when()
+//			.get("/students/{id}")
+//		.then()
+//			.statusCode(200).log().body()
+//			
+//			;
+//		 mongo.MongoInsert(null, null, id, "GET");
+//	}
 	
 //	@Test(priority=20)
 //	public void updateApartment() {
@@ -114,18 +114,18 @@ public class StudentTest extends BasicTest {
 //			.statusCode(500);
 //	}
 	
-	@DataProvider(name = "students")
-	public Object[][] createData() {
-	 return new Object[][] {
-	   { new Student("Gilberto", "41020685034") },
-	   { new Student("Amanda", "22109483040") },
-	   { new Student("Patricia", "70713080043") },
-	   { new Student("Lise", "47623794094") },
-	   { new Student("Maicon", "90026437058") },
-	   { new Student("Everton", "87701006087") },
-	   { new Student("Geromel", "18013476030") },
-	   { new Student("Paulo", "42936092027") },
-	   { new Student("Beatriz", "48695235076") },
-	 };
-	}
+//	@DataProvider(name = "students")
+//	public Object[][] createData() {
+//	 return new Object[][] {
+//	   { new Student("Gilberto", "41020685034") },
+//	   { new Student("Amanda", "22109483040") },
+//	   { new Student("Patricia", "70713080043") },
+//	   { new Student("Lise", "47623794094") },
+//	   { new Student("Maicon", "90026437058") },
+//	   { new Student("Everton", "87701006087") },
+//	   { new Student("Geromel", "18013476030") },
+//	   { new Student("Paulo", "42936092027") },
+//	   { new Student("Beatriz", "48695235076") },
+//	 };
+//	}
 }
