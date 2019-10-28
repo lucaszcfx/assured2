@@ -38,6 +38,5 @@ dependencies {
 useTestNG() {
     // To generate reports by TestNG library
     useDefaultListeners = true
-     }
-    }
+}
 
