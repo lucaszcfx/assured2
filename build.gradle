@@ -35,12 +35,9 @@ dependencies {
 }
 
 
-test {
-
-    useTestNG() {
-       
-        useDefaultListeners = true
+useTestNG() {
+    // To generate reports by TestNG library
+    useDefaultListeners = true
+     }
     }
-}
-}
 
