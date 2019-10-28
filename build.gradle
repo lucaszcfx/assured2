@@ -40,4 +40,7 @@ task smokeTests(type: Test) { // we define a task with name ‘smokeTests’
        useDefaultListeners = true
        suites 'testng.xml'
    }
+   testLogging {
+		events "passed", "skipped", "failed"
+	}
 }
