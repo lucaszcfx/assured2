@@ -34,3 +34,12 @@ dependencies {
     
 }
 
+
+test {     
+ useTestNG() {      
+      useDefaultListeners = true      
+      suiteXmlFilesm << new File("/rest-assured-student/testng.xml")         
+      setSuiteXmlFiles(suiteXmlFiles)    
+    }
+}
+
