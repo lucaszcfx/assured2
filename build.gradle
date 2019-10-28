@@ -35,10 +35,12 @@ dependencies {
 }
 
 
-task smokeTests(type: Test) { // we define a task with name ‘smokeTests’
-   useTestNG() {
-       useDefaultListeners = true
-       suites 'rest-assured-student/testng.xml'
-   }
+test {
+
+    useTestNG() {
+       
+        useDefaultListeners = true
+    }
+}
 }
 
